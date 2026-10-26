@@ -1,0 +1,24 @@
+{
+  "name": "mensajes-whatsapp-otp",
+  "version": "2.0.0",
+  "description": "Adaptador del cajero para enviar OTP mediante WhatsApp Cloud API oficial",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "whatsapp",
+    "otp",
+    "meta-cloud-api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}

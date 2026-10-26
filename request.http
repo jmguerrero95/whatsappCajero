@@ -1,0 +1,28 @@
+### Endpoint productivo: mensaje valido
+POST http://127.0.0.1:3000/api/enviarMensaje HTTP/1.1
+Content-Type: application/json
+
+{
+  "numero": "+573208246257",
+  "mensaje": "Tu codigo de verificacion es 48327"
+}
+
+### Endpoint productivo: mensaje invalido (se descarta)
+POST http://127.0.0.1:3000/api/enviarMensaje HTTP/1.1
+Content-Type: application/json
+
+{
+  "numero": "+573208246257",
+  "mensaje": "mensaje de prueba"
+}
+
+### Diagnostico real contra Meta
+# Reemplazar TU_CLAVE con OTP_TEST_API_KEY del .env
+POST http://127.0.0.1:3000/api/probarEnvioOtp HTTP/1.1
+Content-Type: application/json
+X-OTP-Test-Key: TU_CLAVE
+
+{
+  "numero": "+573208246257",
+  "mensaje": "Tu codigo de verificacion es 48327"
+}
